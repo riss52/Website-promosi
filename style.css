@@ -372,7 +372,7 @@ section {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.65rem 1.25rem;
-  color: #fff;
+  color: green;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
@@ -382,6 +382,8 @@ section {
 .btn-beli:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  background-color: #ff6d9d;
+  color: white;
 }
 
 /* About Section */
@@ -669,4 +671,5 @@ footer {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
+
 
