@@ -1,341 +1,239 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Balancesweet Kitchen</title>
-    <meta
-      name="description"
-      content="Penjualan berbagai makanan lezat dan siap saji"
-    />
-    <meta name="author" content="Balancesweet Kitchen" />
-    <meta
-      name="keywords"
-      content="Makanan, Bergizi, Siap Saji, Makanan Ringan, Enak, Berkualitas"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jurusan DKV - Desain Komunikasi Visual</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <meta
-      property="og:title"
-      content="Balancesweet Kitchen - Produk Berkualitas"
-    />
-    <meta
-      property="og:description"
-      content="Pusat Penjualan Produk Makanan yang legendaris dan enak"
-    />
-    <meta property="og:type" content="website" />
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-content">
+      <div class="logo">
+        <div class="logo-img">
+            <img src="gambar/images.png" alt="">
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">DKV</span>
+          <span class="logo-subtitle">Desain Komunikasi Visual</span>
+        </div>
+      </div>
 
-    <!-- Bootstrap 5.3 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-  </head>
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="#beranda">Beranda</a></li>
+        <li><a class="nav-link" href="#tentang">Tentang</a></li>
+        <li><a class="nav-link" href="#keunggulan">Keunggulan</a></li>
+        <li><a class="nav-link" href="#portofolio">Portofolio</a></li>
+        <li><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
 
-  <body>
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top"
-    >
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="gambar/3.png" alt="Logo" width="40" class="me-2" />
-          <span class="fw-bold">Balancesweet Kitchen</span>
+      <button class="btn-primary">Daftar Sekarang</button>
+      <button class="mobile-menu-btn" id="menuBtn">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a class="nav-link" href="#beranda">Beranda</a>
+      <a class="nav-link" href="#tentang">Tentang</a>
+      <a class="nav-link" href="#keunggulan">Keunggulan</a>
+      <a class="nav-link" href="#portofolio">Portofolio</a>
+      <a class="nav-link" href="#kontak">Kontak</a>
+      <button class="btn-primary">Daftar Sekarang</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="beranda">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Wujudkan Kreativitasmu di Dunia <span>Desain</span></h1>
+      <p>Bergabunglah bersama kami di <span>Desain Komunikasi Visual</span> dan jadilah desainer masa depan yang menginspirasi dunia.</p>
+      <button class="btn-primary">Pelajari Lebih Lanjut</button>
+    </div>
+
+    <div class="scroll-indicator">
+      <svg xmlns="" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="tentang">
+    <div class="container about-grid">
+      <div class="about-image slide-in-left">
+        <img src="gambar/diverse-group-of-people-sitting-in-a-circle-engaging-discussion_11898461.jpg!w700wp" />
+      </div>
+      <div class="about-content slide-in-right">
+        <h2>Tentang <span>Jurusan DKV</span></h2>
+        <p>Desain Komunikasi Visual adalah bidang studi yang menggabungkan seni, teknologi, dan komunikasi untuk menyampaikan pesan secara visual dan efektif.</p>
+        <p>Mahasiswa akan belajar menciptakan karya kreatif di berbagai media — mulai dari branding, ilustrasi, fotografi, hingga animasi digital.</p>
+
+        <div class="info-box">
+          <h3>Visi Kami</h3>
+          <p>Menghasilkan desainer profesional yang inovatif, beretika, dan adaptif terhadap perkembangan teknologi kreatif global.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages Section -->
+  <section class="advantages" id="keunggulan">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Keunggulan <span>Program Kami</span></h2>
+        <p>Kami memberikan lingkungan belajar kreatif dengan dukungan dosen profesional dan fasilitas berstandar industri.</p>
+      </div>
+
+      <div class="advantages-grid">
+        <div class="advantage-card zoom-in">
+          <div class="advantage-icon">🎨</div>
+          <h3>Kurikulum Kreatif</h3>
+          <p>Dirancang untuk mengikuti tren desain modern dan kebutuhan industri kreatif global.</p>
+        </div>
+        <div class="advantage-card zoom-in">
+          <div class="advantage-icon">💡</div>
+          <h3>Proyek Nyata</h3>
+          <p>Mahasiswa mengerjakan proyek dari klien nyata untuk pengalaman profesional sejak dini.</p>
+        </div>
+        <div class="advantage-card zoom-in">
+          <div class="advantage-icon">🏆</div>
+          <h3>Prestasi Nasional</h3>
+          <p>Banyak mahasiswa kami berprestasi di kompetisi desain tingkat nasional dan internasional.</p>
+        </div>
+        <div class="advantage-card zoom-in">
+          <div class="advantage-icon">🖥️</div>
+          <h3>Fasilitas Lengkap</h3>
+          <p>Studio desain, ruang foto, dan lab komputer dengan perangkat lunak profesional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portofolio">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Karya <span>Mahasiswa</span></h2>
+        <p>Beberapa karya terbaik mahasiswa DKV yang menunjukkan kreativitas tanpa batas.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item fade-up">
+          <img src="gambar/dkvusakti-16301506768420.jpg" alt="Karya 1">
+          <div class="portfolio-overlay">
+            <div class="portfolio-overlay-content">
+              <p>Branding</p>
+              <p>Identitas Visual Startup</p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item fade-up">
+          <img src="gambar/logo-dkv-huruf-dkv-desain-logo-huruf-dkv-inisial-logo-dkv-terhubung-dengan-lingkaran-dan-logo-monogram-huruf-besar-tipografi-dkv-untuk-merek-bisnis-teknologi-dan-real-estat_229120-63405.avif" alt="Karya 2">
+          <div class="portfolio-overlay">
+            <div class="portfolio-overlay-content">
+              <p>Poster</p>
+              <p>Kampanye Sosial Kreatif</p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item fade-up">
+          <img src="gambar/digital_art_design_inspiration-2.jpg" alt="Karya 3">
+          <div class="portfolio-overlay">
+            <div class="portfolio-overlay-content">
+              <p>Ilustrasi</p>
+              <p>Digital Art Inspiratif</p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item fade-up">
+          <img src="gambar/pngtree-abstract-a-letter-modern-app-website-logo-design-template-image_547115.jpg" alt="Karya 4">
+          <div class="portfolio-overlay">
+            <div class="portfolio-overlay-content">
+              <p>UI/UX</p>
+              <p>Desain Aplikasi Modern</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="kontak">
+    <div class="container contact-wrapper">
+      <div class="cta-box fade-in">
+        <h3>Bergabunglah Bersama Kami!</h3>
+        <p>Jadilah bagian dari komunitas kreatif DKV dan wujudkan impianmu menjadi desainer profesional.</p>
+        <button class="btn-primary">Daftar Sekarang</button>
+      </div>
+
+      <div class="contact-grid fade-up">
+        <a href="mailto:info@dkv-kampus.ac.id" class="contact-card">
+          <div class="contact-icon">📧</div>
+          <p>Email</p>
+          <p>info@dkv-kampus.ac.id</p>
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <a href="tel:+622112345678" class="contact-card">
+          <div class="contact-icon">📞</div>
+          <p>Telepon</p>
+          <p>+62 21 1234 5678</p>
+        </a>
+        <a href="https://goo.gl/maps/" class="contact-card" target="_blank">
+          <div class="contact-icon">📍</div>
+          <p>Alamat</p>
+          <p>Jl. Kreatif No.123, Jakarta</p>
+        </a>
+      </div>
 
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#hero">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#produk">Produk</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#tentang">Tentang</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#kontak">Kontak</a>
-            </li>
+      <div class="social-section">
+        <p>Ikuti Kami di Media Sosial</p>
+        <div class="social-links">
+          <a href="#" class="social-link">🌐</a>
+          <a href="#" class="social-link">📸</a>
+          <a href="#" class="social-link">💬</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Jurusan DKV</h3>
+          <p>Membentuk desainer muda yang kreatif, inovatif, dan siap menghadapi tantangan industri kreatif global.</p>
+        </div>
+        <div>
+          <h3>Navigasi</h3>
+          <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#keunggulan">Keunggulan</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#kontak">Kontak</a></li>
           </ul>
         </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section
-      id="hero"
-      class="bg-warning-subtle text-center py-5 mt-5 position-relative"
-    >
-      <div class="container py-5">
-        <img
-          src="gambar/logo_smk-removebg-preview.png"
-          alt="Logo SMK"
-          width="120"
-          class="mb-3"
-        />
-        <h1 class="fw-bold text-dark">
-          Selamat Datang di Balancesweet Kitchen
-        </h1>
-        <p class="text-muted mb-4">
-          Pusat Penjualan Produk Makanan yang berkualitas dan halal untuk Anda
-        </p>
-        <a href="#produk" class="btn btn-warning btn-lg text-white shadow">
-          Pelajari Lebih Lanjut
-        </a>
-      </div>
-    </section>
-
-    <!-- Produk Section -->
-    <section id="produk" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4 fw-bold">Produk Kami</h2>
-        <p class="text-center text-muted mb-5">
-          Kami menyediakan berbagai produk berkualitas tinggi untuk Anda
-        </p>
-
-        <div class="row g-4">
-          <!-- Produk 1 -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0">
-              <img src="gambar/cilok.jpg" class="card-img-top" alt="Cilok" />
-              <div class="card-body">
-                <h5 class="card-title">Cilok</h5>
-                <p class="card-text">
-                  Makanan legendaris yang ringan dan siap santap kapanpun, hanya
-                  3k isi 3 biji! Buruan beli!
-                </p>
-                <a
-                  href="https://wa.me/6281326158647?text=Halo%20kak%2C%20saya%20ingin%20memesan%20Cilok%20dari%20Balancesweet%20Kitchen"
-                  target="_blank"
-                  class="btn btn-success w-100"
-                >
-                  <i class="fab fa-whatsapp"></i> Beli via WhatsApp
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Produk 2 -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0">
-              <img
-                src="gambar/pisang.jpg"
-                class="card-img-top"
-                alt="Pisang Coklat Keju"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Pisang Coklat Keju</h5>
-                <p class="card-text">
-                  Potongan pisang renyah dibalut coklat premium dan keju parut —
-                  manis, gurih, dan bikin nagih!
-                </p>
-                <a
-                  href="https://wa.me/62895355832244?text=Halo%20kak%2C%20saya%20ingin%20memesan%20Pisang%20Coklat%20Keju"
-                  target="_blank"
-                  class="btn btn-success w-100"
-                >
-                  <i class="fab fa-whatsapp"></i> Beli via WhatsApp
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Produk 3 -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0">
-              <img src="gambar/puding.jpg" class="card-img-top" alt="Puding" />
-              <div class="card-body">
-                <h5 class="card-title">Puding</h5>
-                <p class="card-text">
-                  Lembut, manisnya pas, tersedia rasa coklat 🍫 dan mangga 🥭
-                  dengan topping keju & coklat.
-                </p>
-                <a
-                  href="https://wa.me/6289505985575?text=Halo%20kak%2C%20saya%20ingin%20memesan%20Puding"
-                  target="_blank"
-                  class="btn btn-success w-100"
-                >
-                  <i class="fab fa-whatsapp"></i> Beli via WhatsApp
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Produk 4 -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0">
-              <img
-                src="gambar/pangsit.jpg"
-                class="card-img-top"
-                alt="Sosis Pangsit"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Sosis Pangsit</h5>
-                <p class="card-text">
-                  Cemilan crunchy yang pas banget buat nemenin waktu santai kamu
-                  ✨
-                </p>
-                <a
-                  href="https://wa.me/6285179672658?text=Halo%20kak%2C%20saya%20ingin%20memesan%20Sosis%20Pangsit"
-                  target="_blank"
-                  class="btn btn-success w-100"
-                >
-                  <i class="fab fa-whatsapp"></i> Beli via WhatsApp
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Produk 5 -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0">
-              <img
-                src="gambar/sago.jpg"
-                class="card-img-top"
-                alt="Sago Manggo"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Sago Manggo</h5>
-                <p class="card-text">
-                  Kombinasi lembutnya sagu, manisnya mangga, dan gurihnya susu —
-                  segar dan nikmat!
-                </p>
-                <a
-                  href="https://wa.me/6285179672658?text=Halo%20kak%2C%20saya%20ingin%20memesan%20Sago%20Manggo"
-                  target="_blank"
-                  class="btn btn-success w-100"
-                >
-                  <i class="fab fa-whatsapp"></i> Beli via WhatsApp
-                </a>
-              </div>
-            </div>
-          </div>
+        <div>
+          <h3>Hubungi Kami</h3>
+          <p>Email: info@dkv-kampus.ac.id</p>
+          <p>Telepon: +62 21 1234 5678</p>
         </div>
       </div>
-    </section>
 
-    <!-- Tentang Kami -->
-    <section id="tentang" class="py-5">
-      <div class="container">
-        <h2 class="text-center fw-bold mb-4">Tentang Kami</h2>
-        <p class="text-center mx-auto mb-5" style="max-width: 700px">
-          Balancesweet Kitchen adalah usaha yang bergerak di bidang penjualan
-          makanan berkualitas tinggi, lezat, dan halal. Kami berkomitmen untuk
-          menghadirkan rasa terbaik dari bahan segar dan higienis.
-        </p>
-
-        <div class="row text-center g-4">
-          <div class="col-md-3">
-            <div class="p-4 border rounded shadow-sm h-100">
-              <i class="fas fa-heart text-danger fs-3 mb-3"></i>
-              <h5>Kualitas Terjamin</h5>
-              <p class="text-muted small">
-                Semua produk kami telah teruji dan segar setiap hari.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="p-4 border rounded shadow-sm h-100">
-              <i class="fas fa-shield-alt text-warning fs-3 mb-3"></i>
-              <h5>Aman & Halal</h5>
-              <p class="text-muted small">
-                Diproduksi dengan bahan pilihan dan proses higienis.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="p-4 border rounded shadow-sm h-100">
-              <i class="fas fa-users text-primary fs-3 mb-3"></i>
-              <h5>Pelayanan Prima</h5>
-              <p class="text-muted small">
-                Tim kami siap melayani dengan ramah dan cepat.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="p-4 border rounded shadow-sm h-100">
-              <i class="fas fa-check-circle text-success fs-3 mb-3"></i>
-              <h5>Sehat & Higienis</h5>
-              <p class="text-muted small">
-                Kami menjaga kebersihan setiap tahap produksi.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="footer-bottom">
+        &copy; <span id="year"></span> Jurusan DKV. Semua hak cipta dilindungi.
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <!-- Kontak -->
-    <section id="kontak" class="py-5 bg-warning-subtle">
-      <div class="container text-center">
-        <h2 class="fw-bold mb-4">Hubungi Kami</h2>
-        <p class="text-muted mb-4">
-          Kami siap melayani Anda. Hubungi kami untuk informasi lebih lanjut.
-        </p>
-
-        <div class="row justify-content-center mb-4">
-          <div class="col-md-3">
-            <i class="fas fa-phone fa-2x text-success mb-2"></i>
-            <p>
-              <a href="tel:+6285227803662" class="text-dark"
-                >+62 852-2780-3662</a
-              >
-            </p>
-          </div>
-          <div class="col-md-3">
-            <i class="fas fa-envelope fa-2x text-danger mb-2"></i>
-            <p>
-              <a href="mailto:sepuluhakuntansi726@gmail.com" class="text-dark"
-                >sepuluhakuntansi726@gmail.com</a
-              >
-            </p>
-          </div>
-          <div class="col-md-4">
-            <i class="fas fa-map-marker-alt fa-2x text-primary mb-2"></i>
-            <p class="text-dark small">
-              Jl. Nitikan Baru No.48, Sorosutan, Umbulharjo, Kota Yogyakarta
-            </p>
-          </div>
-        </div>
-
-        <a
-          href="https://wa.me/6285227803662?text=Halo%20kak%2C%20saya%20ingin%20bertanya%20tentang%20produk%20Balancesweet%20Kitchen"
-          class="btn btn-success btn-lg"
-          target="_blank"
-        >
-          <i class="fab fa-whatsapp"></i> Hubungi via WhatsApp
-        </a>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-      <p class="mb-1">
-        &copy; 2024 Balancesweet Kitchen. Semua hak dilindungi.
-      </p>
-      <small class="text-secondary"
-        >Pusat Penjualan Produk makanan yang berkualitas dan beraneka
-        rasa.</small
-      >
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
