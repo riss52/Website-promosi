@@ -225,9 +225,16 @@ body {
 }
 
 .hero-logo-smk {
-  margin-bottom: 10px;
-  width: 90px;
-  height: 9 0px;
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.hero-logo-smk img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .hero-title {
@@ -680,3 +687,4 @@ footer {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
+
