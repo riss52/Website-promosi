@@ -68,7 +68,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .logo-icon {
@@ -687,5 +687,6 @@ footer {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
+
 
 
