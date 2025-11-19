@@ -89,51 +89,23 @@ animatedElements.forEach(function (element) {
   observer.observe(element);
 });
 
-// Ambil elemen
+// Ambil elemen form
 const form = document.getElementById("contactForm");
-const listPesan = document.getElementById("listPesan");
 
-// Muat pesan dari localStorage saat halaman dibuka
-document.addEventListener("DOMContentLoaded", loadPesan);
-
-// Fungsi Simpan ke localStorage
-function savePesan(data) {
-  let pesanList = JSON.parse(localStorage.getItem("pesanUser")) || [];
-  pesanList.push(data);
-  localStorage.setItem("pesanUser", JSON.stringify(pesanList));
-}
-
-// Fungsi tampilkan pesan di halaman
-function tampilkanPesan(data) {
-  const div = document.createElement("div");
-  div.classList.add("border", "p-3", "rounded-3", "mb-3", "bg-light");
-  div.innerHTML = `
-    <strong>${data.nama}</strong> (${data.email})<br>
-    <span>${data.pesan}</span>
-  `;
-  listPesan.prepend(div); // muncul di atas
-}
-
-// Saat form disubmit
+// Saat form disubmit → langsung ke WhatsApp
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const data = {
-    nama: document.getElementById("nama").value,
-    email: document.getElementById("email").value,
-    pesan: document.getElementById("pesan").value,
-  };
+  const nama = document.getElementById("nama").value;
+  const pesan = document.getElementById("pesan").value;
 
-  // Simpan & tampilkan
-  savePesan(data);
-  tampilkanPesan(data);
+  const phone = "6285227803662";
 
-  // Reset form
+  const text = encodeURIComponent(
+    `Saya ${nama} Pesan:${pesan}`
+  );
+
+  window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
+
   form.reset();
 });
-
-// Load ulang data dari localStorage
-function loadPesan() {
-  let pesanList = JSON.parse(localStorage.getItem("pesanUser")) || [];
-  pesanList.forEach((p) => tampilkanPesan(p));
-}
