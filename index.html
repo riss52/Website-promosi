@@ -1,420 +1,421 @@
- <!DOCTYPE html>
-  <html lang="id">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Balancesweet Kitchen</title>
-      <meta
-        name="description"
-        content="Penjualan Berbagai makanan yang lezat dan siap saji"
-      />
-      <meta name="author" content="Balancesweet Kitchen" />
-      <meta
-        name="keywords"
-        content="Makanan, Bergizi, Siap Saji, Makanan Ringan, Enak berkualitas"
-      />
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balancesweet Kitchen</title>
+    <meta
+      name="description"
+      content="Penjualan Berbagai makanan yang lezat dan siap saji"
+    />
+    <meta name="author" content="Balancesweet Kitchen" />
+    <meta
+      name="keywords"
+      content="Makanan, Bergizi, Siap Saji, Makanan Ringan, Enak berkualitas"
+    />
 
-      <meta
-        property="og:title"
-        content="Balancesweet Kitchen - Produk Berkualitas"
-      />
-      <meta
-        property="og:description"
-        content="Pusat Penjualan Produk Makanan yang legendaris dan enak"
-      />
-      <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Balancesweet Kitchen - Produk Berkualitas"
+    />
+    <meta
+      property="og:description"
+      content="Pusat Penjualan Produk Makanan yang legendaris dan enak"
+    />
+    <meta property="og:type" content="website" />
 
-      <!-- Font Awesome for icons -->
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-      <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-      <!-- Navbar -->
-      <header>
-        <nav class="navbar" id="navbar">
-          <div class="container">
-            <div class="navbar-content">
-              <a href="#" class="logo">
-                <div class="logo-icon">
-                  <img src="gambar/3.png" alt="Logo Balancesweet Kitchen" />
-                </div>
-                <span>Balancesweet Kitchen</span>
-              </a>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar" id="navbar">
+        <div class="container">
+          <div class="navbar-content">
+            <a href="#" class="logo">
+              <div class="logo-icon">
+                <img src="gambar/3.png" alt="Logo Balancesweet Kitchen" />
+              </div>
+              <span>Balancesweet Kitchen</span>
+            </a>
 
-              <ul class="nav-links">
-                <li>
-                  <a href="#hero" onclick="scrollToSection('hero', event)"
-                    >Beranda</a
-                  >
-                </li>
-                <li>
-                  <a href="#produk" onclick="scrollToSection('produk', event)"
-                    >Produk</a
-                  >
-                </li>
-                <li>
-                  <a href="#tentang" onclick="scrollToSection('tentang', event)"
-                    >Tentang</a
-                  >
-                </li>
-                <li>
-                  <a href="#kontak" onclick="scrollToSection('kontak', event)"
-                    >Kontak</a
-                  >
-                </li>
-              </ul>
-
-              <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
-                <!-- <span class="menu-icon"></span> -->
-              </button>
-            </div>
-          </div>
-          
-        </nav>
-        
-        
-        <!-- Mobile Menu -->
-        <div class="mobile-menu" id="mobileMenu">
-          <ul>
-            <li>
-              <a href="#hero" onclick="scrollToSection('hero', event)">Beranda</a>
-            </li>
-            <li>
-              <a href="#produk" onclick="scrollToSection('produk', event)"
-                >Produk</a
+            <ul class="nav-links">
+              <li>
+                <a href="#hero" onclick="scrollToSection('hero', event)"
+                  >Beranda</a
                 >
               </li>
-            <li>
-              <a href="#tentang" onclick="scrollToSection('tentang', event)"
-              >Tentang</a
-              >
-            </li>
-            <li>
-              <a href="#kontak" onclick="scrollToSection('kontak', event)"
-              >Kontak</a
-              >
-            </li>
-          </ul>
-        </div>
-      </header>
-      
-      
-      <main>
-        <!-- Hero Section -->
-        <section class="hero" id="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <!-- ✅ LOGO SMK DI SINI -->
-          <div class="hero-logo-smk">
-            <img src="gambar/logo_smk-removebg-preview.png" alt="Logo SMK" />
-          </div>
+              <li>
+                <a href="#produk" onclick="scrollToSection('produk', event)"
+                  >Produk</a
+                >
+              </li>
+              <li>
+                <a href="#tentang" onclick="scrollToSection('tentang', event)"
+                  >Tentang</a
+                >
+              </li>
+              <li>
+                <a href="#kontak" onclick="scrollToSection('kontak', event)"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
 
-          <h1 class="hero-title">Selamat Datang di Balancesweet Kitchen</h1>
-          <p class="hero-description">
-            Pusat Penjualan Produk Makanan yang berkualitas dan halal untuk anda
-          </p>
-          <div class="hero-button">
-            <button class="btn btn-hero" onclick="handleWhatsApp()">Pelajari Lebih Lanjut</button>
+            <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+              <!-- <span class="menu-icon"></span> -->
+            </button>
           </div>
         </div>
-        <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+        
+      </nav>
+      
+      
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li>
+            <a href="#hero" onclick="scrollToSection('hero', event)">Beranda</a>
+          </li>
+          <li>
+            <a href="#produk" onclick="scrollToSection('produk', event)"
+              >Produk</a
+              >
+            </li>
+          <li>
+            <a href="#tentang" onclick="scrollToSection('tentang', event)"
+            >Tentang</a
+            >
+          </li>
+          <li>
+            <a href="#kontak" onclick="scrollToSection('kontak', event)"
+            >Kontak</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    
+    
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <!-- ✅ LOGO SMK DI SINI -->
+        <div class="hero-logo-smk">
+          <img src="gambar/logo_smk-removebg-preview.png" alt="Logo SMK" />
+        </div>
+
+        <h1 class="hero-title">Selamat Datang <br> di Balancesweet Kitchen</h1>
+        <p class="hero-description">
+          Pusat Penjualan Produk Makanan yang berkualitas dan halal untuk anda
+        </p>
+        <div class="hero-button">
+          <button class="btn btn-hero" onclick="handleWhatsApp()">Pesan Sekarang</button>
+        </div>
+      </div>
+      <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+    </section>
+
+      <!-- Products Section -->
+      <section id="produk">
+        <div class="container">
+          <h2 class="section-title" id="productsTitle">Produk Kami</h2>
+          <p class="section-description" id="productsDesc">
+            Kami menyediakan berbagai produk berkualitas tinggi untuk anda
+          </p>
+
+          <div class="products-grid" id="productsGrid">
+            <div class="product-card" data-index="0">
+              <div class="product-image-wrapper">
+                <img src="gambar/cilok.jpg" alt="Cilok" class="product-image" />
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-content">
+                <h3 class="product-name">Cilok</h3>
+                <p class="product-description">
+                  makanan legendaris yang ringan dan siap santap kapanpun,
+                  harganya pun terjangkau hanya 3k dan dapat isi 3 biji buruan
+                  beli
+                </p>
+
+                <a
+                  href="https://wa.me/6281326158647?text=Halo%2C%20saya%20mau%20pesan%20Cilok%20ya"
+                  class="btn-beli"
+                  target="_blank"
+                >
+                  Beli via WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div class="product-card" data-index="1">
+              <div class="product-image-wrapper">
+                <img
+                  src="gambar/pisang.jpg"
+                  alt="Pisang Coklat Keju"
+                  class="product-image"
+                />
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-content">
+                <h3 class="product-name">Pisang</h3>
+                <p class="product-description">
+                  potongan pisang matang dibalut tepung renyah, digoreng hingga
+                  keemasan, lalu disiram dengan lelehan coklat premium 🍫 yang
+                  melimpah, dan ditaburi keju parut 🧀 yang bikin rasanya makin
+                  sempurna! Crispy di luar, lembut di dalam, manis dan gurihnya
+                  pas — bikin susah berhenti di gigitan pertama 🤤
+                </p>
+
+                <a
+                  href="https://wa.me/62895355832244?text=Halo%2C%20saya%20mau%20pesan%20Cilok%20ya"
+                  class="btn-beli"
+                  target="_blank"
+                >
+                  Beli via WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div class="product-card" data-index="2">
+              <div class="product-image-wrapper">
+                <img
+                  src="gambar/puding.jpg"
+                  alt="Puding"
+                  class="product-image"
+                />
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-content">
+                <h3 class="product-name">Puding</h3>
+                <p class="product-description">
+                  Rasanya lembut, manisnya pas, warnanya lucu tersedia rasa
+                  coklat🍫 dan manggo🥭 bestii.. ada fla lembut dan toping keju
+                  coklatnya bikin nagih
+                </p>
+
+                <a
+                  href="https://wa.me/6289505985575?text=Halo%2C%20saya%20mau%20pesan%20Cilok%20ya"
+                  class="btn-beli"
+                  target="_blank"
+                >
+                  Beli via WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div class="product-card" data-index="3">
+              <div class="product-image-wrapper">
+                <img
+                  src="gambar/pangsit.jpg"
+                  alt="Sosis Pangsit"
+                  class="product-image"
+                />
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-content">
+                <h3 class="product-name">Sosis Pangsit</h3>
+                <p class="product-description">
+                  ✨Sosis Pangsit ✨ Cemilan crunchy yang pas banget buat
+                  nemenin istirahat kalian nih
+                </p>
+
+                <a
+                  href="https://wa.me/6285179672658?text=Halo%2C%20saya%20mau%20pesan%20Cilok%20ya"
+                  class="btn-beli"
+                  target="_blank"
+                >
+                  Beli via WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div class="product-card" data-index="4">
+              <div class="product-image-wrapper">
+                <img
+                  src="gambar/sago.jpg"
+                  alt="Sago Manggo"
+                  class="product-image"
+                />
+                <div class="product-overlay"></div>
+              </div>
+              <div class="product-content">
+                <h3 class="product-name">Sago Manggo</h3>
+                <p class="product-description">
+                  Sago Mango-nya lembut, mangganya wangi, susunya gurih
+                  kombinasi sempurna buat nemenin kamu ngerjain tugas akuntansi
+                  sampe subuh 🧾😵‍💫
+                </p>
+
+                <a
+                  href="https://wa.me/6289674800603?text=Halo%2C%20saya%20mau%20pesan%20Cilok%20ya"
+                  class="btn-beli"
+                  target="_blank"
+                >
+                  Beli via WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-        <!-- Products Section -->
-        <section id="produk">
-          <div class="container">
-            <h2 class="section-title" id="productsTitle">Produk Kami</h2>
-            <p class="section-description" id="productsDesc">
-              Kami menyediakan berbagai produk berkualitas tinggi untuk anda
-            </p>
-
-            <div class="products-grid" id="productsGrid">
-              <div class="product-card" data-index="0">
-                <div class="product-image-wrapper">
-                  <img src="gambar/cilok.jpg" alt="Cilok" class="product-image" />
-                  <div class="product-overlay"></div>
-                </div>
-                <div class="product-content">
-                  <h3 class="product-name">Cilok</h3>
-                  <p class="product-description">
-                    makanan legendaris yang ringan dan siap santap kapanpun,
-                    harganya pun terjangkau hanya 3k dan dapat isi 3 biji buruan
-                    beli
-                  </p>
-
-                  <a
-                    href="https://wa.me/6281326158647?text=Halo%2C%20saya%20mau%20pesan%20Cilok%20ya"
-                    class="btn-beli"
-                    target="_blank"
-                  >
-                    Beli via WhatsApp
-                  </a>
-                </div>
-              </div>
-
-              <div class="product-card" data-index="1">
-                <div class="product-image-wrapper">
-                  <img
-                    src="gambar/pisang.jpg"
-                    alt="Pisang Coklat Keju"
-                    class="product-image"
-                  />
-                  <div class="product-overlay"></div>
-                </div>
-                <div class="product-content">
-                  <h3 class="product-name">Pisang</h3>
-                  <p class="product-description">
-                    potongan pisang matang dibalut tepung renyah, digoreng hingga
-                    keemasan, lalu disiram dengan lelehan coklat premium 🍫 yang
-                    melimpah, dan ditaburi keju parut 🧀 yang bikin rasanya makin
-                    sempurna! Crispy di luar, lembut di dalam, manis dan gurihnya
-                    pas — bikin susah berhenti di gigitan pertama 🤤
-                  </p>
-
-                  <a
-                    href="https://wa.me/62895355832244?text=Halo%2C%20saya%20mau%20pesan%20Cilok%20ya"
-                    class="btn-beli"
-                    target="_blank"
-                  >
-                    Beli via WhatsApp
-                  </a>
-                </div>
-              </div>
-
-              <div class="product-card" data-index="2">
-                <div class="product-image-wrapper">
-                  <img
-                    src="gambar/puding.jpg"
-                    alt="Puding"
-                    class="product-image"
-                  />
-                  <div class="product-overlay"></div>
-                </div>
-                <div class="product-content">
-                  <h3 class="product-name">Puding</h3>
-                  <p class="product-description">
-                    Rasanya lembut, manisnya pas, warnanya lucu tersedia rasa
-                    coklat🍫 dan manggo🥭 bestii.. ada fla lembut dan toping keju
-                    coklatnya bikin nagih
-                  </p>
-
-                  <a
-                    href="https://wa.me/6289505985575?text=Halo%2C%20saya%20mau%20pesan%20Cilok%20ya"
-                    class="btn-beli"
-                    target="_blank"
-                  >
-                    Beli via WhatsApp
-                  </a>
-                </div>
-              </div>
-
-              <div class="product-card" data-index="3">
-                <div class="product-image-wrapper">
-                  <img
-                    src="gambar/pangsit.jpg"
-                    alt="Sosis Pangsit"
-                    class="product-image"
-                  />
-                  <div class="product-overlay"></div>
-                </div>
-                <div class="product-content">
-                  <h3 class="product-name">Sosis Pangsit</h3>
-                  <p class="product-description">
-                    ✨Sosis Pangsit ✨ Cemilan crunchy yang pas banget buat
-                    nemenin istirahat kalian nih
-                  </p>
-
-                  <a
-                    href="https://wa.me/6285179672658?text=Halo%2C%20saya%20mau%20pesan%20Cilok%20ya"
-                    class="btn-beli"
-                    target="_blank"
-                  >
-                    Beli via WhatsApp
-                  </a>
-                </div>
-              </div>
-
-              <div class="product-card" data-index="4">
-                <div class="product-image-wrapper">
-                  <img
-                    src="gambar/sago.jpg"
-                    alt="Sago Manggo"
-                    class="product-image"
-                  />
-                  <div class="product-overlay"></div>
-                </div>
-                <div class="product-content">
-                  <h3 class="product-name">Sago Manggo</h3>
-                  <p class="product-description">
-                    Sago Mango-nya lembut, mangganya wangi, susunya gurih
-                    kombinasi sempurna buat nemenin kamu ngerjain tugas akuntansi
-                    sampe subuh 🧾😵‍💫
-                  </p>
-
-                  <a
-                    href="https://wa.me/6289674800603?text=Halo%2C%20saya%20mau%20pesan%20Cilok%20ya"
-                    class="btn-beli"
-                    target="_blank"
-                  >
-                    Beli via WhatsApp
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="tentang">
-          <div class="container">
-            <h2 class="section-title" id="aboutTitle">Tentang Kami</h2>
-            <div class="about-content" id="aboutContent">
-              <p class="about-text">
-                Balancesweet Kitchen adalah perusahaan yang bergerak di bidang
-                penjualan produk makanan berkualitas tinggi. Kami berkomitmen
-                untuk menyediakan produk-produk terbaik yang telah teruji klinis
-                dan aman untuk kesehatan Anda.
-              </p>
-              <p class="about-text">
-                Dengan pengalaman kurang lebih enam bulan, kami sudah bisa
-                menjamin produk kami tetap segar dan hangat, kami sudah melayani
-                satu sekolah SMK MUHAMMDYAH 1 Yogyakarta, dan terbukti bahwa
-                makananya enak dan masih hangat.
-              </p>
-
-              <div class="features-grid">
-                <div class="feature-card" data-index="0">
-                  <div class="feature-icon">
-                    <i class="fas fa-heart"></i>
-                  </div>
-                  <h3 class="feature-title">Kualitas Terjamin</h3>
-                  <p class="feature-description">
-                    Semua produk kami telah eruji kualitasnya
-                  </p>
-                </div>
-
-                <div class="feature-card" data-index="1">
-                  <div class="feature-icon">
-                    <i class="fas fa-shield-alt"></i>
-                  </div>
-                  <h3 class="feature-title">Aman & Terpercaya</h3>
-                  <p class="feature-description">
-                    Produk makanan yang aman dan halal
-                  </p>
-                </div>
-
-                <div class="feature-card" data-index="2">
-                  <div class="feature-icon">
-                    <i class="fas fa-users"></i>
-                  </div>
-                  <h3 class="feature-title">Pelayanan Prima</h3>
-                  <p class="feature-description">
-                    Tim customer service kami siap membantu Anda 24/7
-                  </p>
-                </div>
-
-                <div class="feature-card" data-index="3">
-                  <div class="feature-icon">
-                    <i class="fas fa-check-circle"></i>
-                  </div>
-                  <h3 class="feature-title">Sehat dan higenis</h3>
-                  <p class="feature-description">
-                    Produk kami menggunakan bahan2 yang sehat dan berkualitas
-                    sehingga terjamin aman.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="kontak">
-          <div class="container">
-            <h2 class="section-title" id="contactTitle">Hubungi Kami</h2>
-            <p class="section-description" id="contactDesc">
-              Kami siap melayani Anda. Hubungi kami untuk informasi lebih lanjut
-            </p>
-
-            <div class="contact-grid">
-              <div class="contact-card" data-index="0">
-                <div class="contact-icon">
-                  <i class="fas fa-phone"></i>
-                </div>
-                <h3 class="contact-title">Telepon</h3>
-                <p class="contact-info">
-                  <a href="tel:+6285227803662" class="contact-link"
-                    >+62 852-2780-3662</a
-                  >
-                </p>
-              </div>
-
-              <div class="contact-card" data-index="1">
-                <div class="contact-icon">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <h3 class="contact-title">Email</h3>
-                <p class="contact-info">
-                  <a
-                    href="mailto:sepuluhakuntansi726@gmail.com"
-                    class="contact-link"
-                    >sepuluhakuntansi726@gmail.com</a
-                  >
-                </p>
-              </div>
-
-              <div class="contact-card" data-index="2">
-                <div class="contact-icon">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <h3 class="contact-title">Alamat</h3>
-                <p class="contact-info">
-                  Jl. Nitikan Baru No.48, Sorosutan, Kec. Umbulharjo, Kota
-                  Yogyakarta, Daerah Istimewa Yogyakarta
-                </p>
-              </div>
-            </div>
-
-            <div class="whatsapp-button">
-              <button class="btn btn-primary" onclick="handleWhatsApp()">
-                <i class="fab fa-whatsapp"></i>
-                Hubungi Kami via WhatsApp
-              </button>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <!-- Footer -->
-      <footer>
+      <!-- About Section -->
+      <section id="tentang">
         <div class="container">
-          <div class="footer-content">
-            <div class="footer-logo">
-              <div class="footer-logo-icon">
-                <img src="gambar/3.png" alt="" />
-              </div>
-              <p class="footer-p">Balancesweet Kitchen</p>
-            </div>
+          <h2 class="section-title" id="aboutTitle">Tentang Kami</h2>
+          <div class="about-content" id="aboutContent">
+            <p class="about-text">
+              Balancesweet Kitchen adalah perusahaan yang bergerak di bidang
+              penjualan produk makanan berkualitas tinggi. Kami berkomitmen
+              untuk menyediakan produk-produk terbaik yang telah teruji klinis
+              dan aman untuk kesehatan Anda.
+            </p>
+            <p class="about-text">
+              Dengan pengalaman kurang lebih enam bulan, kami sudah bisa
+              menjamin produk kami tetap segar dan hangat, kami sudah melayani
+              satu sekolah SMK MUHAMMDYAH 1 Yogyakarta, dan terbukti bahwa
+              makananya enak dan masih hangat.
+            </p>
 
-            <div class="footer-text">
-              <p class="footer-copyright">
-                © 2024 Balancesweet Kitchen. All rights reserved.
-              </p>
-              <p class="footer-tagline">
-                Pusat Penjualan Produk makanan yang berkualitas dan beraneka ragam
-                dan rasa
-              </p>
+            <div class="features-grid">
+              <div class="feature-card" data-index="0">
+                <div class="feature-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <h3 class="feature-title">Kualitas Terjamin</h3>
+                <p class="feature-description">
+                  Semua produk kami telah eruji kualitasnya
+                </p>
+              </div>
+
+              <div class="feature-card" data-index="1">
+                <div class="feature-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="feature-title">Aman & Terpercaya</h3>
+                <p class="feature-description">
+                  Produk makanan yang aman dan halal
+                </p>
+              </div>
+
+              <div class="feature-card" data-index="2">
+                <div class="feature-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <h3 class="feature-title">Pelayanan Prima</h3>
+                <p class="feature-description">
+                  Tim customer service kami siap membantu Anda 24/7
+                </p>
+              </div>
+
+              <div class="feature-card" data-index="3">
+                <div class="feature-icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <h3 class="feature-title">Sehat dan higenis</h3>
+                <p class="feature-description">
+                  Produk kami menggunakan bahan2 yang sehat dan berkualitas
+                  sehingga terjamin aman.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
+      </section>
 
-      <script src="script.js"></script>
-    </body>
-  </html>
+      <!-- Contact Section -->
+      <section id="kontak">
+        <div class="container">
+          <h2 class="section-title" id="contactTitle">Hubungi Kami</h2>
+          <p class="section-description" id="contactDesc">
+            Kami siap melayani Anda. Hubungi kami untuk informasi lebih lanjut
+          </p>
+
+          <div class="contact-grid">
+            <div class="contact-card" data-index="0">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h3 class="contact-title">Telepon</h3>
+              <p class="contact-info">
+                <a href="tel:+6285227803662" class="contact-link"
+                  >+62 852-2780-3662</a
+                >
+              </p>
+            </div>
+
+            <div class="contact-card" data-index="1">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h3 class="contact-title">Email</h3>
+              <p class="contact-info">
+                <a
+                  href="mailto:sepuluhakuntansi726@gmail.com"
+                  class="contact-link"
+                  >sepuluhakuntansi726@gmail.com</a
+                >
+              </p>
+            </div>
+
+            <div class="contact-card" data-index="2">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h3 class="contact-title">Alamat</h3>
+              <p class="contact-info">
+                Jl. Nitikan Baru No.48, Sorosutan, Kec. Umbulharjo, Kota
+                Yogyakarta, Daerah Istimewa Yogyakarta
+              </p>
+            </div>
+          </div>
+
+          <div class="whatsapp-button">
+            <button class="btn btn-primary" onclick="handleWhatsApp()">
+              <i class="fab fa-whatsapp"></i>
+              Hubungi Kami via WhatsApp
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">
+              <img src="gambar/3.png" alt="" />
+            </div>
+            <p class="footer-p">Balancesweet Kitchen</p>
+          </div>
+
+          <div class="footer-text">
+            <p class="footer-copyright">
+              © 2024 Balancesweet Kitchen. All rights reserved.
+            </p>
+            <p class="footer-tagline">
+              Pusat Penjualan Produk makanan yang berkualitas dan beraneka ragam
+              dan rasa
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
 
 
