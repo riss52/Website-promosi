@@ -91,7 +91,7 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -687,4 +687,5 @@ footer {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
+
 
